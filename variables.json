@@ -1,0 +1,13 @@
+{
+	"title": "Smarthpone ados",
+	"description": "no desc",
+	"imgSocial": "social.jpg",
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+	"pubDate": "2020-07-23T11:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.letemps.ch/"
+	}
+}

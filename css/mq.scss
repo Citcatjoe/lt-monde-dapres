@@ -1,0 +1,53 @@
+@include breakpoint(sm) {
+    *{display:  none;}
+}
+
+@include breakpoint(xl) {
+
+	blockquote
+	{
+		font-size:44px;
+   		line-height: 45px;
+
+   		.text
+   		{
+            bottom: 120px;
+   		}
+	}
+
+	.swiper-container .swiper-slide 
+	{
+		
+	    filter: saturate(0);
+	    width: 455px;
+	    height: 800px; 
+	    
+	    position: relative;
+	    top:61%;
+	    transform: translateY(-50%) scale(.7);
+	    margin-left: 0;
+	    margin-right: 0;
+	    transform-origin: center center;
+	    transition: all 0.3s;
+
+
+	    &.swiper-slide-active
+	    {
+	    	filter: saturate(1);
+	        transform: translateY(-50%) scale(1);
+	        box-shadow: 0 20px 24px 0 rgba(0,0,0,0.50);
+	        top: 50%;  
+	    }
+
+	    .vjs-tech 
+	    {
+	        display: block !important;
+	    }
+	} 
+
+	.swiper-container .swiper-slide .controls .btn.btn-play
+	{
+        display: block;
+        bottom:  20px;
+	}   
+}
