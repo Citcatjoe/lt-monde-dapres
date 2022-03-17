@@ -1,32 +1,127 @@
-@include breakpoint(sm) {
-    *{display:  none;}
+@include breakpoint(lg) {
+
+	h1 { font-size: 60px; margin-bottom: 10px;}
+
+	
+
+	p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	blockquote
+	{
+		font-size:26px;
+   		line-height: 26px;
+   		margin:0 !important;
+
+   		.text
+   		{ 
+            bottom: 0px;
+            margin-bottom: 10px;
+
+            span 
+            {
+            line-height: 1;
+            margin-top:5px;
+            }
+   		}
+	}
+
 }
 
-@include breakpoint(xl) {
+@include breakpoint(md) {
+
+	.btn-credits
+	{
+	 bottom:  7.5%;
+    left: 50%;
+    right: auto;
+    transform:  translateX(-50%);
+
+    	&.visible-m {display:  block;}
+    	&.visible-d {display:  none;}
+	}
+	.credits
+	{
+		width: calc(100vw - 40px);
+	    height: 90%;
+	    transform: translate(-50%, 0);
+	    top: 60px;
+	    transform: translate(-50%, 0);
+    	border-radius: 20px;
+
+    	p 
+	    {
+	        width: 100%;
+	        float: none;
+	    }
+	}
+
+	.intro
+	{	position: absolute;
+	    
+	    height: 100%;
+	    width: 100%; 
+	    z-index: 1000;
+	    top: 60px;
+	    right: auto;
+	    bottom: auto;
+	    left: 50%;
+	    //width: 70%;
+	    //height: 65%; 
+	    width: calc(100vw - 40px);
+	    height: 90%;
+	    transform: translate(-50%, 0);
+	    border-radius: 20px;
+
+
+	    h1 { font-size: 40px;}
+	    h2 { font-size: 40px; }
+	    p {
+	    	padding-top: 0;
+	    	font-size: 14px;
+	    	line-height: 20px;
+	    }
+	}
 
 	blockquote
 	{
 		font-size:44px;
-   		line-height: 45px;
+   		line-height: 44px;
+   		margin:0 !important;
 
    		.text
-   		{
-            bottom: 120px;
+   		{ 
+            bottom: 90px;
+            margin-bottom: 10px;
+
+            span 
+            {
+            line-height: 1;
+            }
    		}
+	}
+
+	.swiper-container 
+	{
+		height: 100%;
+		padding: 0;
 	}
 
 	.swiper-container .swiper-slide 
 	{
 		
 	    filter: saturate(0);
-	    width: 455px;
-	    height: 800px; 
-	    
+	    //width: 70%;
+	    //height: 65%; 
+	    width: 300px;
+    height: 530px;
 	    position: relative;
 	    top:61%;
-	    transform: translateY(-50%) scale(.7);
-	    margin-left: 0;
-	    margin-right: 0;
+	    transform: translateY(-60%) scale(.8);
+	    margin-left: 0px;
+	    margin-right: 0px;
 	    transform-origin: center center;
 	    transition: all 0.3s;
 
@@ -49,5 +144,45 @@
 	{
         display: block;
         bottom:  20px;
+        padding: 10px 20px;
+	    border-radius: 100px;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 22px;
+
+	    img 
+	    { 
+	    	width: 18px;
+    		transform: translatey(-1px);
+	    }
 	}   
+
+	.btn-close
+	{
+	    display: block;
+
+	    &.btn-close-credits
+	    {
+
+	    	&.visible-m {display: block;}
+	    	&.visible-d {display: none;}
+	    }
+	}
+
+	.picto-play-big
+	{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+	.visible-d
+	{
+	display: none;
+	}
+
+	.visible-m
+	{
+	display: block;
+	}
 }
